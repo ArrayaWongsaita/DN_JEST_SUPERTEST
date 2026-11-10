@@ -3,6 +3,8 @@ import { formatEmail } from "./formatEmail";
 // ================================================
 // บทที่ 05: ข้อความ
 // ฝึก: toMatch, toContain (กับข้อความ)
+// ตัวอย่าง: expect("hello world").toContain("world");
+//          expect("hello world").toMatch(/world/);
 // ================================================
 
 

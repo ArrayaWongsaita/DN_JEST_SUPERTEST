@@ -4,8 +4,8 @@ import { validateAge } from "./validateAge";
 // บทที่ 09: error
 // ฝึก: toThrow
 // สำคัญ: ต้องห่อการเรียกฟังก์ชันด้วย arrow function
-//        expect(() => divide(1, 0)).toThrow();
-//        ถ้าเขียน expect(divide(1, 0)) ตรงๆ error จะเกิดก่อน expect ทำงาน test จะพังเลย
+//        expect(() => validateAge(-1)).toThrow();
+//        ถ้าเขียน expect(validateAge(-1)) ตรงๆ error จะเกิดก่อน expect ทำงาน test จะพังเลย
 // ================================================
 
 

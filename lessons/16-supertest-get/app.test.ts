@@ -35,7 +35,7 @@ test.todo("GET /health ต้องได้ body เป็น { status: \"ok\" 
 
 // ------------------------------------------------
 // ข้อ 3: GET /users/1 ต้องได้ status 200 และข้อมูลของ Mali
-// แนวทาง: ตรวจสองอย่างใน test เดียว คือ response.status และ response.body
+// แนวทาง: ตรวจสองอย่างใน test เดียว คือ toBe(200) กับ response.status และ toEqual({ ... }) กับ response.body
 // ------------------------------------------------
 test.todo("GET /users/1 ต้องได้ status 200 และข้อมูลของ Mali");
 // 👉 เขียน test ของข้อ 3 ตรงนี้

@@ -35,7 +35,7 @@ npm test -- --watch lessons/01    # รันซ้ำอัตโนมัต�
 
 ## สารบัญ
 
-### ช่วงที่ 1: matcher พื้นฐาน
+### ช่วงที่ 1: พื้นฐาน Jest (บท 01–09)
 
 | บท | โฟลเดอร์ | ฝึก |
 |---|---|---|
@@ -43,18 +43,13 @@ npm test -- --watch lessons/01    # รันซ้ำอัตโนมัต�
 | 02 | `02-to-equal` | `toEqual` |
 | 03 | `03-truthiness` | `toBeNull`, `toBeUndefined`, `toBeTruthy`, `toBeFalsy` |
 | 04 | `04-numbers` | `toBeGreaterThan`, `toBeLessThan`, `toBeCloseTo` |
-
-### ช่วงที่ 2: ข้อความ, array, object, error
-
-| บท | โฟลเดอร์ | ฝึก |
-|---|---|---|
 | 05 | `05-strings` | `toMatch`, `toContain` กับข้อความ |
 | 06 | `06-arrays` | `toContain` กับ array, `toHaveLength` |
 | 07 | `07-objects` | `toHaveProperty`, `toMatchObject` |
 | 08 | `08-not` | `.not` |
 | 09 | `09-errors` | `toThrow` |
 
-### ช่วงที่ 3: จัดระเบียบ test, async, mock
+### ช่วงที่ 2: จัดระเบียบ test, setup/teardown, async, mock (บท 10–13)
 
 | บท | โฟลเดอร์ | ฝึก |
 |---|---|---|
@@ -63,7 +58,7 @@ npm test -- --watch lessons/01    # รันซ้ำอัตโนมัต�
 | 12 | `12-async` | `async/await`, `resolves`, `rejects` |
 | 13 | `13-mock-functions` | `jest.fn`, `toHaveBeenCalled...` |
 
-### ช่วงที่ 4: Express
+### ช่วงที่ 3: Express ทีละชิ้น (บท 14–15)
 
 ทวนก่อนเริ่ม: `req` คือคำขอที่เข้ามา (params, headers, body), `res` คือตัวส่งคำตอบกลับ (`res.status(...)`, `res.json(...)`), `next` คือฟังก์ชันส่งต่อให้ตัวถัดไป
 
@@ -71,6 +66,11 @@ npm test -- --watch lessons/01    # รันซ้ำอัตโนมัต�
 |---|---|---|
 | 14 | `14-mock-req-res` | `getMockReq`, `getMockRes` จาก `@jest-mock/express` |
 | 15 | `15-mock-middleware` | ตรวจ `next` ใน middleware |
+
+### ช่วงที่ 4: Express ทั้งเส้น (บท 16–17)
+
+| บท | โฟลเดอร์ | ฝึก |
+|---|---|---|
 | 16 | `16-supertest-get` | `request(app).get` |
 | 17 | `17-supertest-post` | `request(app).post().send()` |
 
