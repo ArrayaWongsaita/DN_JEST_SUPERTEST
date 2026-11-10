@@ -27,7 +27,7 @@ test("addToCart([\"apple\"], \"banana\") ตะกร้าต้องมี 2 
 
 // ------------------------------------------------
 // ข้อ 3: addToCart(["apple"], "banana") ต้องได้ ["apple", "banana"]
-// แนวทาง: ใช้ matcher จากบท 02 (เทียบ array ทั้งก้อน)
+// แนวทาง: ใช้ toEqual (จากบท 02) เทียบ array ทั้งก้อน
 // ------------------------------------------------
 test("addToCart([\"apple\"], \"banana\") ต้องได้ [\"apple\", \"banana\"]", () => {
   expect(addToCart(["apple"], "banana")).toEqual(["apple", "banana"]);

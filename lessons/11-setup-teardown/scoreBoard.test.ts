@@ -19,10 +19,9 @@ import { loadPlayers, addScore, getScore, resetScores, clearPlayers } from "./sc
 describe("scoreBoard", () => {
   // ------------------------------------------------
   // ข้อ 6: ใส่ console.log บอกชื่อใน hook ทั้งสามตัว เพิ่ม beforeEach ที่มีแค่ console.log
-  //        และใส่ console.log ในแต่ละ test แล้วรันดูลำดับ
+  //         และใส่ console.log ในแต่ละ test แล้วรันดูลำดับ
   // แนวทาง: console.log("beforeAll"); เป็นต้น
   // สรุปลำดับ: beforeAll -> (beforeEach -> test -> afterEach) ซ้ำทุก test -> afterAll
-  // (ทำข้อ 1 ถึง 5 ให้เสร็จก่อน แล้วค่อยกลับมาทำข้อนี้)
   // ------------------------------------------------
   beforeEach(() => {
     console.log("beforeEach");
@@ -40,8 +39,8 @@ describe("scoreBoard", () => {
 
 
   // ------------------------------------------------
-  // ข้อ 4: เพิ่ม afterEach(() => resetScores()) แล้วเขียน test:
-  //        ผู้เล่นที่ยังไม่ได้คะแนนใน test นี้ต้องได้ 0
+  // ข้อ 4: ผู้เล่นที่ยังไม่ได้คะแนนใน test นี้ต้องได้ 0
+  // โจทย์: เพิ่ม afterEach(() => resetScores()) แล้วเขียน test นี้
   // แนวทาง: afterEach(() => { resetScores(); }); แล้วใช้ toBe(0) กับ getScore("Mali")
   // ------------------------------------------------
   afterEach(() => {
