@@ -13,6 +13,9 @@ import { maskPassword } from "./maskPassword";
 // ------------------------------------------------
 test.todo("maskPassword(\"secret\") ต้องไม่ใช่ \"secret\"");
 // 👉 เขียน test ของข้อ 1 ตรงนี้
+test('maskPassword("secret") ต้องไม่ใช่ "secret"', () => {
+    expect(maskPassword("secret")).not.toBe("secret");
+});
 
 
 // ------------------------------------------------
@@ -29,3 +32,6 @@ test.todo("maskPassword(\"secret\") ต้องไม่มีคำว่า s
 // ------------------------------------------------
 test.todo("maskPassword(\"1234\") ต้องไม่มี \"1\"");
 // 👉 เขียน test ของข้อ 3 ตรงนี้
+// test('should', () => {
+//     expect("1").not.toContain("1");
+// })

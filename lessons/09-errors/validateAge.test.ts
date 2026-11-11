@@ -8,22 +8,27 @@ import { validateAge } from "./validateAge";
 //        ถ้าเขียน expect(validateAge(-1)) ตรงๆ error จะเกิดก่อน expect ทำงาน test จะพังเลย
 // ================================================
 
-
 // ------------------------------------------------
 // ข้อ 1: validateAge(20) ต้องได้ true
 // แนวทาง: ใช้ toBe (ข้อนี้ไม่ต้องห่อ arrow function)
 // ------------------------------------------------
-test.todo("validateAge(20) ต้องได้ true");
+// test.todo("validateAge(20) ต้องได้ true");
 // 👉 เขียน test ของข้อ 1 ตรงนี้
-
+test("validateAge(20) ต้องได้ true", () => {
+  expect(validateAge(20)).toBe(true);
+});
 
 // ------------------------------------------------
 // ข้อ 2: validateAge(-1) ต้อง throw ข้อความ "Age must be a positive number"
 // แนวทาง: ห่อด้วย arrow function แล้วใช้ toThrow พร้อมข้อความ
 // ------------------------------------------------
-test.todo("validateAge(-1) ต้อง throw ข้อความ \"Age must be a positive number\"");
+// test.todo("validateAge(-1) ต้อง throw ข้อความ \"Age must be a positive number\"");
 // 👉 เขียน test ของข้อ 2 ตรงนี้
-
+test('validateAge(-1) ต้อง throw ข้อความ \"Age must be a positive number\"', () => {
+  expect(() => {
+    validateAge(-1);
+  }).toThrow();
+});
 
 // ------------------------------------------------
 // ข้อ 3 (เลือกเอง): validateAge(18) ต้องไม่ throw
@@ -31,3 +36,32 @@ test.todo("validateAge(-1) ต้อง throw ข้อความ \"Age must b
 // ------------------------------------------------
 test.todo("validateAge(18) ต้องไม่ throw");
 // 👉 เขียน test ของข้อ 3 ตรงนี้
+test("validateAge(18) ต้องไม่ throw", () => {
+  expect(() => {
+    validateAge(18);
+  }).not.toThrow();
+  // expect(validateAge(18)).toBeTruthy();
+});
+// describe("group 1", () => {
+//   test("should 1.1", () => {
+//     expect(true).toBeTruthy();
+//   });
+//   test("should 1.2", () => {
+//     expect(true).toBeTruthy();
+//   });
+
+
+
+
+//   describe("group 2", () => {
+//   test("should 2.1", () => {
+//     expect(true).toBeTruthy();
+//   });
+//   test("should 2.2", () => {
+//     expect(true).toBeTruthy();
+//   });
+// });
+
+// });
+
+

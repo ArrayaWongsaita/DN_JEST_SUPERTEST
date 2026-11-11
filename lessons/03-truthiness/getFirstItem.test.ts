@@ -11,13 +11,19 @@ import { getFirstItem } from "./getFirstItem";
 // ข้อ 1: getFirstItem([]) ต้องได้ undefined
 // แนวทาง: expect(getFirstItem(...)).toBeUndefined()
 // ------------------------------------------------
-test.todo("getFirstItem([]) ต้องได้ undefined");
+// test.todo("getFirstItem([]) ต้องได้ undefined");
 // 👉 เขียน test ของข้อ 1 ตรงนี้
+test("getFirstItem([]) ต้องได้ undefined", ( ) => {
+    expect(getFirstItem([])).toBeUndefined()
+});
 
 
 // ------------------------------------------------
 // ข้อ 2: getFirstItem(["a", "b"]) ต้องได้ "a"
 // แนวทาง: expect(getFirstItem(...)).toBe(...)
 // ------------------------------------------------
-test.todo("getFirstItem([\"a\", \"b\"]) ต้องได้ \"a\"");
+// test.todo("getFirstItem([\"a\", \"b\"]) ต้องได้ \"a\"");
 // 👉 เขียน test ของข้อ 2 ตรงนี้
+test('getFirstItem(["a", "b"]) ต้องได้ "a"', () => {
+    expect(getFirstItem(["a","b"])).toBe("a")
+})

@@ -11,13 +11,18 @@ import { isAdult } from "./isAdult";
 // ข้อ 1: isAdult(20) ต้องเป็นจริง
 // แนวทาง: expect(isAdult(...)).toBeTruthy()
 // ------------------------------------------------
-test.todo("isAdult(20) ต้องเป็นจริง");
+// test.todo("isAdult(20) ต้องเป็นจริง");
 // 👉 เขียน test ของข้อ 1 ตรงนี้
-
+test("isAdult(20) ต้องเป็นจริง", () => {
+    expect(isAdult(20)).toBeTruthy();
+});
 
 // ------------------------------------------------
 // ข้อ 2: isAdult(15) ต้องเป็นเท็จ
 // แนวทาง: expect(isAdult(...)).toBeFalsy()
 // ------------------------------------------------
-test.todo("isAdult(15) ต้องเป็นเท็จ");
+// test.todo("isAdult(15) ต้องเป็นเท็จ");
 // 👉 เขียน test ของข้อ 2 ตรงนี้
+test("isAdult(15) ต้องเป็นเท็จ",() => {
+    expect(isAdult(20)).toBeTruthy();
+});

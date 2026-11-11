@@ -13,21 +13,30 @@ import { calculateDiscount } from "./calculateDiscount";
 // ข้อ 1: calculateDiscount(200, 10) ต้องได้ 180
 // แนวทาง: expect(calculateDiscount(...)).toBe(...)
 // ------------------------------------------------
-test.todo("calculateDiscount(200, 10) ต้องได้ 180");
+// test.todo("calculateDiscount(200, 10) ต้องได้ 180");
 // 👉 เขียน test ของข้อ 1 ตรงนี้
-
+test("calculateDiscount(200, 10) ต้องได้ 180", () => {
+    expect(calculateDiscount(200, 10)).toBe(180);
+});
 
 // ------------------------------------------------
 // ข้อ 2: calculateDiscount(100, 25) ต้องน้อยกว่า 100
 // แนวทาง: expect(calculateDiscount(...)).toBeLessThan(...)
 // ------------------------------------------------
-test.todo("calculateDiscount(100, 25) ต้องน้อยกว่า 100");
+// test.todo("calculateDiscount(100, 25) ต้องน้อยกว่า 100");
 // 👉 เขียน test ของข้อ 2 ตรงนี้
+test("calculateDiscount(100, 25) ต้องน้อยกว่า 100", () => {
+    expect(calculateDiscount(100,25)).toBeLessThan(100);
+});
+
 
 
 // ------------------------------------------------
 // ข้อ 3: calculateDiscount(500, 20) ต้องมากกว่า 300
 // แนวทาง: expect(calculateDiscount(...)).toBeGreaterThan(...)
 // ------------------------------------------------
-test.todo("calculateDiscount(500, 20) ต้องมากกว่า 300");
+// test.todo("calculateDiscount(500, 20) ต้องมากกว่า 300");
 // 👉 เขียน test ของข้อ 3 ตรงนี้
+test("calculateDiscount(500, 20) ต้องมากกว่า 300", () => {
+    expect(calculateDiscount(500,20)).toBeGreaterThan(380);
+});

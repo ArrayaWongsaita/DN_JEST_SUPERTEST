@@ -13,9 +13,11 @@ import { divide } from "./divide";
 // ข้อ 1: divide(10, 2) ต้องได้ 5
 // แนวทาง: ใช้ toBe เหมือนเดิม (ข้อนี้ไม่ต้องห่อ arrow function)
 // ------------------------------------------------
-test.todo("divide(10, 2) ต้องได้ 5");
+// test.todo("divide(10, 2) ต้องได้ 5");
 // 👉 เขียน test ของข้อ 1 ตรงนี้
-
+test('divide(10, 2) ต้องได้ 5', () => {
+     expect(divide(10, 2)).toBe(5);
+});
 
 // ------------------------------------------------
 // ข้อ 2: divide(1, 0) ต้อง throw error
@@ -23,11 +25,20 @@ test.todo("divide(10, 2) ต้องได้ 5");
 // ------------------------------------------------
 test.todo("divide(1, 0) ต้อง throw error");
 // 👉 เขียน test ของข้อ 2 ตรงนี้
-
+test('divide(1, 0) ต้อง throw error', () => {
+    expect( () => { divide(1,0)  }).toThrow();
+});
 
 // ------------------------------------------------
 // ข้อ 3: divide(1, 0) ต้อง throw ข้อความ "Cannot divide by zero"
 // แนวทาง: toThrow รับข้อความที่คาดหวังได้
 // ------------------------------------------------
-test.todo("divide(1, 0) ต้อง throw ข้อความ \"Cannot divide by zero\"");
+// test.todo("divide(1, 0) ต้อง throw ข้อความ \"Cannot divide by zero\"");
 // 👉 เขียน test ของข้อ 3 ตรงนี้
+
+test('Cannot divide by zero', () => {
+    expect(() => {
+        divide(1, 0)
+    }).toThrow("Cannot divide by zero");
+});
+
